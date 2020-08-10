@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5px;
+}
+
+.container header .title {
+  font-size: 32px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #0f4c75;
+}
+
+.container header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.container header .hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin-top: 2px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.container header .nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container header .nav ul a {
+  padding: 5px 15px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#ec9664), to(#e76e0a));
+  background: linear-gradient(to top right, #ec9664, #e76e0a);
+  border-radius: 4px;
+}
+
+.container header .nav ul a:hover {
+  font-size: 16px;
+  -webkit-box-shadow: 2px 2px 5px #aaa;
+          box-shadow: 2px 2px 5px #aaa;
+  background: cornflowerblue;
+}
+
+.container main {
+  position: relative;
+}
+
+.container main img {
+  width: 100%;
+  max-height: 700px;
+  opacity: 0.7;
+}
+
+.container main .mainText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+  text-shadow: 5px 5px 2px #c0b8b8;
+  font-size: 50px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.container section {
+  width: 95%;
+  margin: auto;
+}
+
+.container section .mypicks {
+  font-size: 30px;
+  padding: 5px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(salmon), to(cornflowerblue));
+  background: linear-gradient(to right, salmon, cornflowerblue);
+  border-radius: 5px;
+  margin: 10px 0px;
+  color: white;
+}
+
+.container section .personal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.container section .personal div {
+  -webkit-box-shadow: 2px 3px 5px #222;
+          box-shadow: 2px 3px 5px #222;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#dfcece), to(#eeecec));
+  background: linear-gradient(to right, #dfcece, #d8d8d8);
+}
+
+.container section .personal div a {
+  font-size: 18px;
+  color: #ff0095;
+  text-decoration: underline;
+}
+.container section .personal div a:hover {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.container section .personal div img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 5px auto;
+}
+
+.container footer {
+  background: -webkit-gradient(linear, right top, left top, from(salmon), to(cornflowerblue));
+  background: linear-gradient(to left, salmon, cornflowerblue);
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.container footer .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container footer .info p a {
+  font-size: 16px;
+}
+
+.container footer img {
+  width: 30px;
+}
+
+.container footer ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container header .hamburger {
+    display: block;
+  }
+  .container header .toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+            transform: rotate(-45deg) translate(-5px, 2px);
+  }
+  .container header .toggle .line2 {
+    opacity: 0;
+  }
+  .container header .toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -2px);
+            transform: rotate(45deg) translate(-5px, -2px);
+  }
+  .container header .nav {
+    position: absolute;
+    right: 0px;
+    top: 58px;
+    background-color: white;
+    z-index: 1;
+    width: 160px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    border-bottom-left-radius: 10px;
+  }
+  .container header .nav ul {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container header .non-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .container main .mainText {
+    font-size: 28px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .info {
+    text-align: center;
+  }
+  footer ul {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container header .title {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+section .text {
+  font-size: 28px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#69dce4), to(#e5e9f0));
+  background: linear-gradient(to top right, #69dce4, #e5e9f0);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+section img {
+  display: block;
+  margin: auto;
+  width: 60px;
+}
+
+section .minisection1, section .minisection2, section .minisection3, section .minisection4, section .minisection5 {
+  margin-top: 18px;
+}
+
+section .minisection1 .gridContainer1, section .minisection1 .gridContainer2, section .minisection1 .gridContainer3, section .minisection1 .gridContainer4, section .minisection1 .gridContainer5, section .minisection2 .gridContainer1, section .minisection2 .gridContainer2, section .minisection2 .gridContainer3, section .minisection2 .gridContainer4, section .minisection2 .gridContainer5, section .minisection3 .gridContainer1, section .minisection3 .gridContainer2, section .minisection3 .gridContainer3, section .minisection3 .gridContainer4, section .minisection3 .gridContainer5, section .minisection4 .gridContainer1, section .minisection4 .gridContainer2, section .minisection4 .gridContainer3, section .minisection4 .gridContainer4, section .minisection4 .gridContainer5, section .minisection5 .gridContainer1, section .minisection5 .gridContainer2, section .minisection5 .gridContainer3, section .minisection5 .gridContainer4, section .minisection5 .gridContainer5 {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+section .minisection1 .gridContainer1 div, section .minisection1 .gridContainer2 div, section .minisection1 .gridContainer3 div, section .minisection1 .gridContainer4 div, section .minisection1 .gridContainer5 div, section .minisection2 .gridContainer1 div, section .minisection2 .gridContainer2 div, section .minisection2 .gridContainer3 div, section .minisection2 .gridContainer4 div, section .minisection2 .gridContainer5 div, section .minisection3 .gridContainer1 div, section .minisection3 .gridContainer2 div, section .minisection3 .gridContainer3 div, section .minisection3 .gridContainer4 div, section .minisection3 .gridContainer5 div, section .minisection4 .gridContainer1 div, section .minisection4 .gridContainer2 div, section .minisection4 .gridContainer3 div, section .minisection4 .gridContainer4 div, section .minisection4 .gridContainer5 div, section .minisection5 .gridContainer1 div, section .minisection5 .gridContainer2 div, section .minisection5 .gridContainer3 div, section .minisection5 .gridContainer4 div, section .minisection5 .gridContainer5 div {
+  background: -webkit-gradient(linear, left top, right bottom, from(#d2dac1), color-stop(whitesmoke), to(#d2dac1));
+  background: linear-gradient(to bottom right, #d2dac1, whitesmoke, #d2dac1);
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-box-shadow: 3px 3px 5px #bbb;
+          box-shadow: 3px 3px 5px #bbb;
+}
+
+section .minisection1 .gridContainer1 div a, section .minisection1 .gridContainer2 div a, section .minisection1 .gridContainer3 div a, section .minisection1 .gridContainer4 div a, section .minisection1 .gridContainer5 div a, section .minisection2 .gridContainer1 div a, section .minisection2 .gridContainer2 div a, section .minisection2 .gridContainer3 div a, section .minisection2 .gridContainer4 div a, section .minisection2 .gridContainer5 div a, section .minisection3 .gridContainer1 div a, section .minisection3 .gridContainer2 div a, section .minisection3 .gridContainer3 div a, section .minisection3 .gridContainer4 div a, section .minisection3 .gridContainer5 div a, section .minisection4 .gridContainer1 div a, section .minisection4 .gridContainer2 div a, section .minisection4 .gridContainer3 div a, section .minisection4 .gridContainer4 div a, section .minisection4 .gridContainer5 div a, section .minisection5 .gridContainer1 div a, section .minisection5 .gridContainer2 div a, section .minisection5 .gridContainer3 div a, section .minisection5 .gridContainer4 div a, section .minisection5 .gridContainer5 div a {
+  color: royalblue;
+  font-size: 18px;
+}
+/*# sourceMappingURL=frontend.css.map */
